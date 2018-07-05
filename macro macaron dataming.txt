@@ -1,0 +1,15 @@
+Sub macaron()
+Dim i As Integer
+ 
+For i = 65 To 1 Step -1
+    If IsEmpty(Worksheets("rv1.csv").Cells(i, 1)) = True Then Worksheets("rv1.csv").Rows(i).Delete
+Next i
+End Sub
+
+
+Sub mino()
+Dim i As Long
+For i = Range("H529").End(xlUp).Row To 1 Step -1
+    If Not UCase(Cells(i, 8).Value) Like UCase("x") Then Rows(i).Delete
+Next i
+End Sub
