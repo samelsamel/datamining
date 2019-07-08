@@ -1,5 +1,6 @@
 # datamining
-This project show how we can classify bad and good comments of a restaurent page and how can machine learn to classify them.  
-
-First we had imported the comments which are in a csv fiel 
-we added a machine learning model for the comments which had an accuracy of a 75%. 
+This project show how we can classify bad and googd comments from comments extracted in a csv file. 
+The data is in Tunisian  Dialects, which makes it really hard to clean,
+as their are different ways of writing a word. 
+we used a basic machine learning model to divide comments, bad ones are labeled as -1 whereas good ones were labeled as +1.
+At the very last, the model gave an accuracy of 75%.  
